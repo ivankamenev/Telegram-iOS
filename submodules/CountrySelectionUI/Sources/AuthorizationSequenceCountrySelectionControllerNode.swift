@@ -76,7 +76,8 @@ func localizedCountryNamesAndCodes(strings: PresentationStrings) -> [((String, S
             }
             result.append(((englishCountryName, countryName), country.id, codes))
         } else {
-            assertionFailure()
+//            assertionFailure()
+            continue
         }
     }
     return result
